@@ -1,0 +1,17 @@
+export const mockTrending = [
+  { id: 't_001', tag: 'algorithm',    displayTag: '#Algorithm',    category: 'Technology', postCount: 48200, growth: 28, peakHour: '14:00', relatedTags: ['ai', 'feed', 'bias'] },
+  { id: 't_002', tag: 'realtime',     displayTag: '#RealTime',     category: 'Technology', postCount: 35100, growth: 22, peakHour: '09:00', relatedTags: ['streaming', 'live', 'latency'] },
+  { id: 't_003', tag: 'surveillance', displayTag: '#Surveillance', category: 'Society',    postCount: 29800, growth: 19, peakHour: '20:00', relatedTags: ['privacy', 'data', 'tracking'] },
+  { id: 't_004', tag: 'signal',       displayTag: '#Signal',       category: 'Technology', postCount: 24600, growth: 15, peakHour: '11:00', relatedTags: ['noise', 'clarity', 'truth'] },
+  { id: 't_005', tag: 'attention',    displayTag: '#Attention',    category: 'Psychology', postCount: 21400, growth: 31, peakHour: '21:00', relatedTags: ['scroll', 'focus', 'depth'] },
+  { id: 't_006', tag: 'loop',         displayTag: '#Loop',         category: 'Technology', postCount: 18900, growth: 12, peakHour: '15:00', relatedTags: ['feedback', 'cycle', 'dependency'] },
+  { id: 't_007', tag: 'burnout',      displayTag: '#Burnout',      category: 'Health',     postCount: 17200, growth: 24, peakHour: '22:00', relatedTags: ['detox', 'mental', 'break'] },
+  { id: 't_008', tag: 'noise',        displayTag: '#Noise',        category: 'Society',    postCount: 15600, growth: 9,  peakHour: '18:00', relatedTags: ['signal', 'feed', 'filter'] },
+  { id: 't_009', tag: 'viral',        displayTag: '#Viral',        category: 'Media',      postCount: 14100, growth: 7,  peakHour: '16:00', relatedTags: ['trending', 'reach', 'spread'] },
+  { id: 't_010', tag: 'platform',     displayTag: '#Platform',     category: 'Technology', postCount: 12800, growth: 14, peakHour: '10:00', relatedTags: ['community', 'infrastructure', 'drift'] },
+  { id: 't_011', tag: 'identity',     displayTag: '#Identity',     category: 'Psychology', postCount: 11400, growth: 18, peakHour: '23:00', relatedTags: ['performance', 'self', 'echo'] },
+  { id: 't_012', tag: 'ownership',    displayTag: '#Ownership',    category: 'Policy',     postCount: 10200, growth: 11, peakHour: '08:00', relatedTags: ['rights', 'copyright', 'platform'] },
+  { id: 't_013', tag: 'transparency', displayTag: '#Transparency', category: 'Policy',     postCount: 9800,  growth: 16, peakHour: '12:00', relatedTags: ['accountability', 'moderation', 'data'] },
+  { id: 't_014', tag: 'detox',        displayTag: '#Detox',        category: 'Health',     postCount: 8700,  growth: 33, peakHour: '07:00', relatedTags: ['break', 'mental', 'offline'] },
+  { id: 't_015', tag: 'bias',         displayTag: '#Bias',         category: 'Society',    postCount: 7900,  growth: 21, peakHour: '13:00', relatedTags: ['algorithm', 'moderation', 'fairness'] },
+]
