@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Light mode (default) ─────────────────────────────────────── */
+:root {
+  --surface-primary:   #ffffff;
+  --surface-secondary: #f4f4f5;
+  --surface-elevated:  #ffffff;
+  --surface-overlay:   rgba(0, 0, 0, 0.5);
+
+  --text-primary:      #09090b;
+  --text-secondary:    #3f3f46;
+  --text-muted:        #a1a1aa;
+  --text-inverse:      #ffffff;
+
+  --border-default:    #d4d4d8;
+  --border-strong:     #09090b;
+  --border-subtle:     #f4f4f5;
+
+  --accent:            #09090b;
+  --accent-hover:      #27272a;
+}
+
+/* ─── Dark mode ─────────────────────────────────────────────────── */
+.dark {
+  --surface-primary:   #09090b;
+  --surface-secondary: #18181b;
+  --surface-elevated:  #27272a;
+  --surface-overlay:   rgba(255, 255, 255, 0.08);
+
+  --text-primary:      #fafafa;
+  --text-secondary:    #d4d4d8;
+  --text-muted:        #71717a;
+  --text-inverse:      #09090b;
+
+  --border-default:    #3f3f46;
+  --border-strong:     #fafafa;
+  --border-subtle:     #27272a;
+
+  --accent:            #fafafa;
+  --accent-hover:      #d4d4d8;
+}
+
+/* ─── Base reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+  transition: background-color 200ms ease, color 200ms ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Smooth theme transitions ──────────────────────────────────── */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* Exclude transitions from animated elements */
+.no-transition, .no-transition *, [data-motion] {
+  transition: none !important;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ─── Focus ring ─────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--border-strong);
+  outline-offset: 2px;
+}
+
+/* ─── Typography utilities ──────────────────────────────────────── */
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ─── Sharp shadow utility ───────────────────────────────────────── */
+.shadow-sharp {
+  box-shadow: 4px 4px 0px var(--border-strong);
+}
+.shadow-sharp-sm {
+  box-shadow: 2px 2px 0px var(--border-strong);
+}
+.shadow-sharp-lg {
+  box-shadow: 8px 8px 0px var(--border-strong);
+}
+
+/* ─── Selection ──────────────────────────────────────────────────── */
+::selection {
+  background: var(--text-primary);
+  color: var(--text-inverse);
+}
